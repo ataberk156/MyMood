@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Meme Savaşları - Multiplayer meme party game",
   "private": true,
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "install:all": "npm install --prefix server && npm install --prefix client",
     "dev": "start cmd /k \"npm run dev --prefix server\" && start cmd /k \"npm run dev --prefix client\"",
     "dev:server": "npm run dev --prefix server",
     "dev:client": "npm run dev --prefix client",
-    "build": "npm run build --prefix client",
-    "start": "npm start --prefix server"
+    "build": "npm install --prefix client && npm run build --prefix client",
+    "start": "node server/src/index.js"
   }
 }
