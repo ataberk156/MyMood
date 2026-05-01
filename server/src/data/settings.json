@@ -1,0 +1,10 @@
+{
+  "totalRounds": 5,
+  "submissionTimer": 60,
+  "votingTimer": 30,
+  "resultsTimer": 6,
+  "minPlayers": 2,
+  "maxPlayers": 6,
+  "handSize": 5,
+  "adminPassword": "Ataberkuslu123"
+}
